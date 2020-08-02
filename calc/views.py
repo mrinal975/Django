@@ -5,7 +5,7 @@ def home(request):
     return render(request, 'index.html', {'name':'mrinal'})
 
 def add(request):
-    first = int(request.GET['first'])
-    second = int(request.GET['second'])
+    first = int(request.POST['first'])
+    second = int(request.POST['second'])
     result = first + second
     return render(request, 'result.html', {'result':result})
