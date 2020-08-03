@@ -209,7 +209,11 @@
                             <img src="{{baseUrl}}/{{des.img}}" alt="not found">
                         </div>
                         <div class="content">
-                            <p class="d-flex align-items-center">{{des.name}} <a href="travel_destination.html">{{des.price}}</a> </p>
+                            <p class="d-flex align-items-center">{{des.name}} <a href="travel_destination.html">{{des.price}}</a>
+                                {% if des.offer == True %}
+                                <spna style="padding-left:6px;" >offer</spna>
+                                {% endif%}
+                            </p>
                         </div>
                     </div>
                 </div>

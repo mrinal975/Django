@@ -7,5 +7,6 @@ class designation():
     img : str
     desc : str
     price : int
+    offer : bool
 
 
